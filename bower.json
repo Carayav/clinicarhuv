@@ -1,0 +1,21 @@
+{
+  "name": "clinica-rhuv-pacientes",
+  "description": "Aplicacion MEAN stack para el agendamiento de consultas y examanes para Clinica Reproducción Humana de la Universidad de Valparaiso",
+  "main": "index.js",
+  "authors": [
+    "Claudio Araya"
+  ],
+  "license": "UNLICENSED",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "toastr": "^2.1.3",
+    "angular": "^1.6.6",
+    "angular-resource": "^1.6.6",
+    "angular-route": "^1.6.6"
+  },
+  "resolutions": {
+    "jquery": ">=1.6.3 <3"
+  }
+}
