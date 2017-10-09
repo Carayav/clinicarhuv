@@ -1,11 +1,12 @@
 doctype
+head
+    title Clínica de Reproducción Humana - Universidad de Valparaíso
+    base(href="/")
+    link(href="/favicion.ico", rel="shortcut icon", type="image/icon")
+    link(rel="stylesheet", href="/vendor/bootstrap/dist/css/bootstrap.css")
+    link(rel="stylesheet", href="/vendor/toastr/toastr.css")
+    link(rel="stylesheet", href="/css/site.css")
 html
-    head
-        title Clínica de Reproducción Humana - Universidad de Valparaíso
-        base(href="/")
-        link(href="/favicion.ico", rel="shortcut icon", type="image/icon")
-        link(rel="stylesheet", href="/css/site.css")
-        link(rel="stylesheet", href="/vendor/bootstrap/dist/css/bootstrap.css")
     body(ng-app="app")
         block main-content
         footer.midnight-blue
@@ -17,5 +18,5 @@ html
                             li Clínica de Reproducción Humana
                             li Hontaneda 2664, Valparaíso. Chile
                             li Fonot: +56 (32) 250 7313
-
         include scripts
+

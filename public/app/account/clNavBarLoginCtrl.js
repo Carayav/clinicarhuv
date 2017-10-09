@@ -1,10 +1,12 @@
-angular.module('app').controller('clNavBarLoginCtrl', function($scope, $http){
+angular.module('app').controller('clNavBarLoginCtrl', function($scope, $http, clNotifier, clIdentity){
+    $scope.identity = clIdentity;
     $scope.signin = function(username, password){
         $http.post('/login', {username:username, password:password}).then(function(response){
             if(response.data.sucess){
-                console.log('Logueado');
+                clIdentity.currentUser = response.data.user;
+                clNotifier.notify("¡Ha ingresUsuario/Contraseña ado exitosamente!")
             } else {
-                console.log('No Logueado');
+                clNotifier.notify("Combinación Usuario/Contraseña incorrecta");
             }
         })
     }

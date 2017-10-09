@@ -43,3 +43,9 @@ footer .center ul {
 .navbar-form .form-group:first-child {
   margin-top: 15px;
 }
+.toast-top-right {
+  top: 130px;
+}
+.toast-success {
+  background-color: #00ad84;
+}
