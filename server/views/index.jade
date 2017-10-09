@@ -3,12 +3,20 @@ extends ../includes/layout
 block main-content
     header
         .container
-            .navbar-left
+            nav.navbar-left
                 h1 Clínica de Reproducción Humana <br/> Universidad de Valparaíso
-            .navbar-right
-                a(href="#")
-                    img.pull-right(src="/img/logoblanco.png")
-                div(ng-include="'/partials/account/navbar-login'")
+            nav.navbar-right
+                    a.navbar-brand(href="#")
+                        img(src="/img/logoblanco.png")
+    div(ng-include="'/partials/account/navbar-login'")
     section.content
         div(ng-view)
-    h2= mongoMessage
+    footer.midnight-blue
+        .container
+            .row.center
+                .col-sm-12
+                    img(src="/img/logoblanco.png")
+                    ul
+                        li Clínica de Reproducción Humana
+                        li Hontaneda 2664, Valparaíso. Chile
+                        li Fonot: +56 (32) 250 7313

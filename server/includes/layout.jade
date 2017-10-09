@@ -8,15 +8,7 @@ head
     link(rel="stylesheet", href="/css/site.css")
 html
     body(ng-app="app")
+        include currentUser
         block main-content
-        footer.midnight-blue
-            .container
-                .row.center
-                    .col-sm-12
-                        img(src="/img/logoblanco.png")
-                        ul
-                            li Clínica de Reproducción Humana
-                            li Hontaneda 2664, Valparaíso. Chile
-                            li Fonot: +56 (32) 250 7313
         include scripts
 

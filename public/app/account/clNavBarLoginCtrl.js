@@ -1,4 +1,4 @@
-angular.module('app').controller('clNavBarLoginCtrl', function($scope, $http, clNotifier, clIdentity, clAuth){
+angular.module('app').controller('clNavBarLoginCtrl', function($scope, $http, clNotifier, clIdentity, clAuth, $location){
     $scope.identity = clIdentity;
     $scope.signin = function(username, password){
         clAuth.authenticateUser(username, password).then(function (success) {
@@ -9,4 +9,14 @@ angular.module('app').controller('clNavBarLoginCtrl', function($scope, $http, cl
             }
         })
     }
+    
+    $scope.signout = function () {
+        clAuth.logoutUser().then(function () {
+            $scope.username = "";
+            $scope.password = "";
+            clNotifier.notify('Ha salido exitosamente!');
+            $location.path('/')
+        })
+    }
+    
 });

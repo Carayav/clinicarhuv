@@ -32,17 +32,6 @@ footer .center li {
 footer .center ul {
   list-style: none;
 }
-.navbar-form .form-group {
-  margin-top: 10px;
-  margin-left: 10px;
-}
-.navbar-form button {
-  margin-top: 10px;
-  margin-left: 10px;
-}
-.navbar-form .form-group:first-child {
-  margin-top: 15px;
-}
 .toast-top-right {
   top: 130px;
 }
