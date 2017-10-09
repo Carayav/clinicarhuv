@@ -1,0 +1,6 @@
+form.navbar-form(ng-controller="clNavBarLoginCtrl")
+    .form-group
+        input.form-control(placeholder="Usuario", ng-model="username")
+    .form-group
+        input.form-control(type="password" placeholder="Contraseña", ng-model="password")
+    button.btn.btn-primary(ng-click="signin(username, password)") Ingresar

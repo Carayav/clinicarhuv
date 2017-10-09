@@ -1,0 +1,14 @@
+extends ../includes/layout
+
+block main-content
+    header
+        .container
+            .navbar-left
+                h1 Clínica de Reproducción Humana <br/> Universidad de Valparaíso
+            .navbar-right
+                a(href="#")
+                    img.pull-right(src="/img/logoblanco.png")
+                div(ng-include="'/partials/account/navbar-login'")
+    section.content
+        div(ng-view)
+    h2= mongoMessage
